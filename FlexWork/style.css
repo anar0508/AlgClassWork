@@ -1,6 +1,7 @@
 .parent{
     border: 1px solid lightblue;
     min-width: 850px;
+    padding-left: 10px;
     max-width: 1200px;
     position: relative;
     border-radius: 10px;
