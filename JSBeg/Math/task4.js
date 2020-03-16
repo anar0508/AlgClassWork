@@ -1,18 +1,18 @@
 function desiredSum(initialSum, sum) {
     let percent = 12 / 100;
     let partPercent = 7 / 100;
-    let years = Math.round(Math.log(sum / initialSum) / Math.log(1 + percent));
-    let monthes = Math.floor(12*Math.round(Math.log(sum / initialSum)/Math.log(1 + percent) * 10) / 10 - years);
-    let remSum = sum - calculateSum(years * 12, initialSum);
-    let newMonthes = Math.floor(Math.log(remSum) / Math.log(partPercent));
-    console.log(newMonthes);
-    // let remMonthesBal = bal * (7 / 100)*monthes/12;
+    let years = Math.log(sum / initialSum) / Math.log(1 + percent);
+    let monthes = years - Math.round(Math.log(sum / initialSum) / Math.log(1 + percent));
+    let savedSum = calculateSum(Math.round(years) *12, initialSum);
+    let newMonthes = Math.ceil(Math.log(sum/savedSum) / Math.log(1+partPercent/12));
 
 
-    return years;
+
+    return Math.round(years) *12 +newMonthes;
 }
 
-console.log(desiredSum(100, 1000));
+console.log("Чтобы накопить данную указанную сумму, вам понадобится " + desiredSum(100, 1000) + 
+" месяцев! Из которых 20 лет вычислены по 12 процентой, а 7 месяцев по 7%");
 
 
 function calculateSum(monthes, initBal) {
