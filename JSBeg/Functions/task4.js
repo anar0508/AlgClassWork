@@ -1,6 +1,6 @@
 document.querySelector('button').addEventListener('click', function () {
 
-    let i1 = 'Добро пожаловать в зимбабвийский "Кто хочет стать мультимиллионером?. \nНа кону 1 миллион!';
+    let i1 = '\nНа кону 1 миллион!';
     let q1 = "Кто проживает на дне океана?";
     let v1 = "1) Путин. 2) Твоя самооценка. 3) Губка Боб. 4) Боб";
     let a1 = '3';
@@ -15,13 +15,14 @@ document.querySelector('button').addEventListener('click', function () {
     let v3 = "1) Ты. 2) Безос. 3) Цукерберг. 4) Гейтс.";
     let a3 = '1';
 
+    alert('Добро пожаловать в зимбабвийский "Кто хочет стать мультимиллионером?' +
+    '\nОсновное правило: Вводите номер ответа, а не сам ответ!');
+
     if (question(i1, q1, v1, a1)==true){
         if (question(i2, q2, v2, a2) ==true) {
             question(i3, q3, v3, a3)
         }
     };
-
-});
 
 function question(i, q, m, c) {
     let message = `${i} \n${q} \n${m}`;
@@ -34,3 +35,4 @@ function question(i, q, m, c) {
         return false
     }
 } 
+});

@@ -1,43 +1,49 @@
 document.querySelector('button').addEventListener('click', function () {
+    
+    let intro1 = '\nНа кону 1 миллион!';
+    let question1 = "Кто проживает на дне океана?";
+    let version1 = "1) Путин. 2) Твоя самооценка. 3) Губка Боб. 4) Боб";
+    let answer1 = '3';
+    let prize1 = '0';
 
-    let i1 = 'Добро пожаловать в зимбабвийский "Кто хочет стать мультимиллионером?. \nНа кону 1 миллион!';
-    let q1 = "Кто проживает на дне океана?";
-    let v1 = "1) Путин. 2) Твоя самооценка. 3) Губка Боб. 4) Боб";
-    let a1 = '3';
+    let intro2 = 'Отлично! Следующий вопрос. \nНа кону 3 миллиона! Вопрос №2!';
+    let question2 = "Вы готовы дети?";
+    let version2 = "1) Да. 2) Нет. 3) Сарказм. 4) 300.";
+    let answer2 = '1';
+    let prize2 = '1 миллион';
 
-    let i2 = 'Отлично! Следующий вопрос. \nНа кону 3 миллиона! Вопрос №2!';
-    let q2 = "Вы готовы дети?";
-    let v2 = "1) Да. 2) Нет. 3) Сарказм. 4) 300.";
-    let a2 = '1';
+    let intro3 = 'Вы молодец! Последний вопрос. \nНа кону 10 миллионов!';
+    let question3 = "Кто мультимиллионер?";
+    let version3 = "1) Ты. 2) Безос. 3) Цукерберг. 4) Гейтс.";
+    let answer3 = '1';
+    let prize3 = '3 миллионa';
+    let quesNumber = 0;
 
-    let i3 = 'Вы молодец! Последний вопрос. \nНа кону 10 миллионов!';
-    let q3 = "Кто мультимиллионер?";
-    let v3 = "1) Ты. 2) Безос. 3) Цукерберг. 4) Гейтс.";
-    let a3 = '1';
-    let ques=0; 
 
-    if (question(i1, q1, v1, a1, ques, 0)==true){
-        ques+=1;
-        if (question(i2, q2, v2, a2, ques, '1 миллион') ==true) {
-            ques+=1;
-            question(i3, q3, v3, a3, ques, '3 миллиона' )
+    alert('Добро пожаловать в зимбабвийский "Кто хочет стать мультимиллионером?' +
+        '\nОсновное правило: Вводите номер ответа, а не сам ответ!');
+
+    if (question(intro1, question1, version1, answer1, quesNumber, prize1) == true) {
+        quesNumber += 1;
+        if (question(intro2, question2, version2, answer2, quesNumber, prize2) == true) {
+            ques += 1;
+            question(intro3, question3, version3, answer3, quesNumber, prize3)
         }
     };
 
+    function question(intro, question, version, answer, quesNumber, prize) {
+        let message = `${intro} \n${question} \n${version}`;
+        let input = prompt(message);
+        if (input == answer) {
+            alert('Совершенно верно!');
+            return true;
+        } else if (input == null) {
+            alert(`Вы правильно ответили на ${quesNumber} вопросов из 3 и Ваш выигрыш составил ${prize}`);
+            return false;
+        } 
+        else {
+            alert('Тутуту. Испытайте удачу ещё раз!');
+            return false;
+        }
+    }
 });
-
-function question(i, q, m, c, n, p) {
-    let message = `${i} \n${q} \n${m}`;
-    let answer = prompt(message);
-    if (answer == c) {
-        alert('Совершенно верно!');
-        return true;
-    } else if (answer== null){
-        alert(`Вы правильно ответили на ${n} вопросов из 3 и Ваш выигрыш составил ${p}`);
-        return false;
-    }
-    else {
-        alert('Тутуту. Испытайте удачу ещё раз!');
-        return false;
-    }
-} 
