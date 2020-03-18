@@ -35,7 +35,8 @@ header{
     border-radius: 15px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+
 }
 
 .interactive{
@@ -45,8 +46,10 @@ header{
     background-color: #f1f1b0;
 }
 .tab{
+    display: flex;
     width: 70%;
     background-color: #ff6666;
+    justify-content: center;
 }
 
 input{
@@ -65,3 +68,13 @@ button{
     padding: 10px;
     border-color: #c3f584;
 }
+
+#myTable{
+    border: 1px solid #f8dc88;
+    background-color: white;
+    width: 80%;
+}
+
+th, td{
+    background-color: white;
+} 
