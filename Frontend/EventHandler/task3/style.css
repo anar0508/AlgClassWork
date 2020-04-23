@@ -1,0 +1,45 @@
+body {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+table.equities {
+   border-collapse: collapse;
+}
+
+table.equities tr {
+   border-bottom: 1px solid #ece6e6;
+}
+
+table.equities  th {
+   background: #fffeea;
+   padding: 10px;
+   text-align: center;
+}
+
+table.equities  th a, table.equities  th a:visited {
+   text-decoration: none;
+   color: #0D66A5;
+}
+
+table.equities  th a:hover {
+   text-decoration: underline;
+}
+
+table.equities  td {
+   padding: 8px 40px;
+}
+
+table.equities  tr > td:last-child, table.equities  tr > td:nth-child(3) {
+   text-align: center;
+}
+
+
+td.increase {
+   background: #d6f7d6;
+}
+
+td.decrease {
+   background: #f5dada;
+}

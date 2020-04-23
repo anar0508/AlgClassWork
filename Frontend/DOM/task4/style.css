@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    margin: 0.5em 0;
+  }
+  
+  td, th { 
+    text-align: right; 
+    padding: 3px 10px;
+    border: 1px solid grey;
+    white-space: nowrap;
+  }
+  
+  th {
+    text-align:center;
+    white-space: normal;
+  }
+  
+  td:nth-child(1), td:nth-child(2) {
+    text-align: left;
+    white-space: normal;
+  }
+  
+  .color-green {
+    color: green;
+  }
+  
+  .color-red {
+    color: red;
+  }

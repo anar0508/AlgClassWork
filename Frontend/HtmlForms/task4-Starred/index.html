@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адресная книга</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="task1.js" defer></script>
+</head>
+<body>
+    <h1>Адресная книга</h1>
+
+    <table id="users">
+        <tr>
+            <th>ФИО</th>
+            <th>E-mail</th>
+            <th>Телефон</th>
+        </tr>
+        <tr>
+            <td>Иванов Петр Сергеевич</td>
+            <td><a href="mailto:ivanov@xxx.yy">ivanov@xxx.yy</a></td>
+            <td>+7-(903)-1234567</td>
+        </tr>
+        <tr>
+            <td>Пушкин Александ Сергеевич</td>
+            <td><a href="mailto:aspushkin@gmail.ru">aspushkin@gmail.ru</a></td>
+            <td>+7-(915)-7894561</td>
+        </tr>
+        <tr>
+            <td>Сидоров Семен Степанович</td>
+            <td><a href="mailto:sidorov@yandex.net">sidorov@yandex.net</a></td>
+            <td>+7-(905)-8746984</td>
+        </tr>
+        <tr>
+            <td>Петрова Марья Ивановна</td>
+            <td><a href="mailto:petrova@xxx.yy">petrova@xxx.yy</a></td>
+            <td>+7-(926)-0123456</td>
+        </tr>
+        <tr>
+            <td>Пупкин Василий Иванович</td>
+            <td><a href="mailto:pupkin@mail.ru">pupkin@mail.ru</a></td>
+            <td>+7-(901)-7751389</td>
+        </tr>
+    </table>
+    <form name="rowAdder">
+        <div>
+            <label for="fullName">ФИО</label>
+            <input type="text" id="name" name="fullName" required/>
+        </div>
+        <div>
+            <label for="email">e-mail</label>
+            <input type="email" id="email" name="email" required/>
+        </div>
+        <div>
+            <label for="phone">Телефон (в формате +7-(***)-*******) </label>
+            <input type="tel" id="phone" name="phone"
+       pattern="+7\s?-?[(]{0,1}9[0-9]{2}[)][-]{0,1}\s?\d{7}" 
+       required>
+        </div>
+
+
+
+    </form>
+</body>
+</html>

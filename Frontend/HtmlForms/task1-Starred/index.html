@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="feedback-container">
+        <form name="feedback">
+            <div class="control-block">
+                <label for="feedback-form-text">Имя</label>
+                <input type="text" name="user_name" id="feedback-form-text" required/>
+                <div class="hint" id="feedback-form-text-hint">Имя будет отображено в сообщении</div>
+            </div>
+
+            <div class="control-block">
+                <label for="feedback-form-age">Возраст</label>
+                <input type="number" name="age" id="feedback-form-age" min="0" max="150" step="1" required/>
+            </div>
+
+            <div class="control-block">
+                <label for="feedback-form-email">E-mail</label>
+                <input type="email" name="email" id="feedback-form-email" />
+            </div>
+
+            <div class="control-block">
+                <labeL for="feedback-form-sex">Пол</labeL>
+                <select name="sex" id="feedback-form-sex"> 
+                    <option value="male">Мужской</option> 
+                    <option value="female">Женский</option>
+                </select>
+            </div>
+
+            <div class="control-block checkbox-block">
+                <input type="checkbox" name="hide_email" id="feedback-form-hide-email"/>
+                <label for="feedback-form-hide-email">Скрыть мой e-mail</label>
+            </div>
+
+            <div class="textarea-block">
+                <label for="feedback-form-message">Текст сообщения</label>
+                <textarea name="message" id="feedback-form-message" rows="5" required></textarea>
+            </div>
+
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id='messages-container'>
+        <div class="message">
+            <p class="author"><a href="mailto:xxx@yyy.com">Иван</a> (18 лет) сообщил:</p>
+            <p>Текст комментария</p>
+        </div>
+        <div class="message">
+            <p class="author">Мария (32 года) сообщила:</p>
+            <p>Текст комментария</p>
+        </div>
+    </div>
+</body>
+</html>

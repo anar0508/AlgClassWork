@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Информация о вкладах</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="feedback-form">
+      <div>
+        <label for="student-name">Имя студента</label>
+        <input id="student-name" name="student_name" type="text" />
+      </div>
+      <div>
+        <label for="lesson-name">Урок</label>
+        <select name="lesson" id="lesson-name" required>
+          <option value="Events">Обработка событий</option>
+          <option value="Forms">HTML формы</option>
+        </select>
+      </div>
+      <div>
+        <label for="feedback-area"> Ваше мнение</label>
+        <textarea name="feedback" id="feedback-area" cols="30" rows="10" required>Ваш комментарий</textarea >
+      </div>
+
+      <div>
+        <label for="tasks-number"> Количество выполненных заданий</label>
+        <input type="number" id="tasks-number" required/>
+      </div>
+
+      <div>
+        <label for="check"> Подтверждаю, что понял уроки</label>
+        <input type="checkbox" id="check" />
+      </div>
+
+      <div>
+        <label for="submit-button">
+          Елси уверены, что готовы отправить- нажмите
+        </label>
+        <input type="submit" value="Отправить" id="submit-button" />
+      </div>
+    </form>
+
+    <script src="task1.js"></script>
+  </body>
+</html>

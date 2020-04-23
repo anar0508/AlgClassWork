@@ -1,0 +1,25 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #505050;
+}
+
+#shopping-list-container {
+  border: 1px solid pink;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.list-item {
+  padding: 4px;
+  border-bottom: 1px solid pink;
+}
+
+.done {
+  text-decoration: line-through;
+}

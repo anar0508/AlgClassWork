@@ -1,0 +1,1 @@
+fetch("http://193.124.206.100/", {mode:"cors"}).then(result=> result.text()).then(result=>console.log(result));

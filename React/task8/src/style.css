@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 10px;
+    border: 1px solid salmon;
+    width: 115px;
+    font-size: 14px;
+    text-align: center;
+}
+
+P:hover{
+    background-color: salmon;
+}
+
+.result{
+    padding: 10px;
+    border: 1px solid salmon;
+    width: 115px;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}

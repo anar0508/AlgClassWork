@@ -1,0 +1,85 @@
+body {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+
+.message {
+   margin: 10px 0;
+   padding: 10px;
+   background: #f6ffeb;
+   border-radius: 10px;
+   max-width: 500px;
+}
+
+.author {
+   font-size: 14px ;
+   color: #888888;
+}
+
+.feedback-container {
+   padding: 10px;
+   background: #eeeeee;
+   border-radius: 10px;
+   width: 500px;
+}
+
+textarea, input, select {
+   border: 1px solid #cccccc;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 16px;
+}
+
+input, select {
+   flex-grow: 2;
+   display: block;
+}
+
+input[type="checkbox"] {
+   flex-grow: 0;
+   margin: 0 8px 0 0;
+}
+
+textarea {
+   display: block;
+   width: 100%;
+   box-sizing: border-box;
+   resize: vertical ;
+}
+
+textarea:focus, input:focus, select:focus {
+   outline: none;
+   border-color: #999999;
+}
+
+label {
+   display: block;
+   min-width: 100px;
+}
+
+.control-block {
+   margin: 4px 0 ;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+.hint {
+   position: absolute;
+   left: 505px;
+   width: 200px;
+   border: 1px solid #cccccc;
+   border-radius: 10px;
+   background: rgba(0, 0, 255, 0.1);
+   padding: 20px ;
+   display: none;
+}
+
+.checkbox-block {
+   justify-content: flex-start;
+}
+
+.textarea-block {
+   margin: 4px 0 ;
+}

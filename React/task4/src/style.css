@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+.card{
+    font-family: 'Inconsolata', monospace;
+    background-color: #FFDC40;
+    width: 350px;
+    height: 200px;
+    margin:40px;
+    padding-right: 5px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.chip{
+    position: absolute;
+    margin-top: 10px;
+    margin-left:10px;
+    padding-left: 0px;
+    width: 60px;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 22px;
+    margin-left:75px;
+    width: 95px;
+}
+
+.nummer{
+    position: absolute;
+    text-align: justify;
+    margin: 75px 9px 0px 14px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.valid{
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 125px;
+    margin-left: 15px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.name{
+    font-size: 20px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-left: 15px;
+    }
+
+.visa{
+    position: absolute;
+    margin-left: 235px;
+    margin-top: 151px;
+    width: 78px;
+}

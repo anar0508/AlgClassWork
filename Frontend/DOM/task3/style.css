@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+tr {
+    background-color: #E1E1E1;
+}
+
+tr:nth-child(2n-1) {
+    background-color: white;
+}
+th{
+    text-align: left;
+    padding: 8px;
+    border: 1px solid grey;
+}
+td{
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+td.increase {
+    color:green;
+}
+
+td.decrease {
+    color:red;
+}
+tr :last-child{
+  width: 20px;  
+}

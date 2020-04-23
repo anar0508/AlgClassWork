@@ -1,0 +1,22 @@
+body {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+#users th {
+   background: #fffeea;
+   border: 1px solid #cccccc;
+   padding: 10px;
+   text-align: center;
+}
+
+#users td {
+   border: 1px solid #cccccc;
+   padding: 8px 20px;
+   cursor: pointer;
+}
+
+#users tr:hover {
+   background: #e4f5e4;
+}
