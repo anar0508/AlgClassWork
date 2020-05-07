@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin: 70px auto;
+}
+
+table {
+  margin: 20px;
+  border-collapse: collapse;
+  border: 1px solid salmon;
+}
+
+th {
+  border: 1px solid salmon;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid salmon;
+  padding: 5px;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+.s-button {
+  border: 1px solid salmon;
+  padding: 2px;
+  margin: 5px;
+  background-color: white;
+  color: salmon;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+  width: 60px;
+  border-radius: 4px;
+}
+
+.s-button:hover {
+  color: white;
+  border: 1px solid blue;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.checkbox-point {
+  display: flex;
+  width: 33%;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 5px;
+  height: 30px;
+}
+
+.point{
+  margin: 3px;
+}
+
+.text-input {
+  margin: 5px;
+}

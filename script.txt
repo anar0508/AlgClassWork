@@ -1,0 +1,15 @@
+const fs = require('fs');
+
+fs.readFile('./text.txt', 'utf8', (err, data) => {
+  if(err){
+	console.log('Something is wrong');
+} else {
+	let getData= JSON.parse(data);
+	let sum= getData.reduce((curr, next)=>{
+	return curr+=Number(next.age);
+
+}, 0)
+	console.log(sum/getData.length);
+}
+
+});

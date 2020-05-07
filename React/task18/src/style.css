@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  font-family: "Inconsolata", monospace;
+  background-color: #ffdc40;
+  width: 350px;
+  height: 200px;
+  margin: 40px;
+  padding-right: 5px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.chip {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  width: 60px;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 22px;
+  margin-left: 75px;
+  width: 95px;
+}
+
+input {
+  background-color: #ffdc40;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.number {
+  position: absolute;
+  text-align: justify;
+  width: 300px;
+  height: 32px;
+  margin: 75px 9px 0px 14px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 20px;
+  position: absolute;
+  font-weight: bold;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+
+.cvv-container {
+  display: flex;
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 115px;
+  margin-left: 15px;
+  align-items: baseline;
+}
+
+.cvv-text {
+  margin: 5px;
+}
+
+.cvv {
+  width: 40px;
+  
+}
+
+.date-container {
+    display: flex;
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 115px;
+    margin-left: 15px;
+    align-items: baseline;
+  }
+
+.valid {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.date{
+    width: 150px;
+}
+
+.visa {
+  position: absolute;
+  margin-left: 235px;
+  margin-top: 120px;
+  width: 78px;
+}
