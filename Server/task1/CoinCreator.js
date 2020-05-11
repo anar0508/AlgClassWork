@@ -12,7 +12,7 @@ const coinsGenerator = async () => {
             year: Math.floor(Math.random() * 1000) + 1020,
             price: (Math.random() * 1000 + 500).toFixed(2),
             rarity: Math.floor(Math.random() * 2) + 1 === 1 ? 'very rare' : 'common',
-            id: i
+            id: `${jsonRes[i].length}${jsonRes[i][2]}a${i}${Math.floor(Math.random() * 150) + 1}`
         }
         coins.push(coin)
     }

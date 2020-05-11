@@ -1,5 +1,4 @@
 import React from 'react';
-import './counter.css';
 
 function Point(props) {
 
