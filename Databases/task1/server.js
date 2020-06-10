@@ -14,8 +14,9 @@ const connection = mysql.createPool({
 });
 
 
+
 app.get('/transactions', (req, res) => {
-    let getTransactions = ` SELECT * FROM transactions`;
+    let getTransactions = ` SELECT * FROM users`;
     connection.query(getTransactions, (err, data) => {
         if (!err) {
             const count = +req.query.count;

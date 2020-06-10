@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+@media (min-height: 250px) {
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    background-color: #30475e;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+@media (max-height: 250px) {
+  header {
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    background-color: #30475e;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+.menu {
+  width: 40%;
+  margin: 0 auto;
+  min-width: 350px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.menu-points {
+  color: white;
+  text-decoration: none;
+}
+
+.page {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: calc(100vh - 40px);
+ 
+}
+
+.main {
+  background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+}
+
+.experience {
+  background-image: url("https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.education {
+  background-image: url("https://images.unsplash.com/photo-1509869175650-a1d97972541a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.aboutMe {
+  background-image: url("https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+
+section {
+  position: relative;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.name {
+  width: 100%;
+  color: white;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.contacts-container {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-container a {
+  margin: 5px;
+}
+
+img {
+  width: 50px;
+}
+
+.foto {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+td {
+  color: white;
+  font-weight: 400;
+  padding: 4px;
+  text-align: left;
+}
+
+p {
+  color: white;
+  font-weight: 300;
+  text-align: justify;
+}

@@ -19,7 +19,6 @@ const App = () => {
   const [result, changeResult] = useState(false);
   const [showList, show] = useState(false);
   const [UsersList, getList] = useState([]);
-  const [CopyUsersList, getCopy] = useState([]);
 
   const handleChange = (value, persFunc) => {
     persFunc(value);
@@ -38,20 +37,24 @@ const App = () => {
         'Access-Control-Allow-Origin': 'http://localhost:3000',
         'Content-Type': 'application/json'
       },
-    }).then(()=>{    
+    }).then(()=>{
+         
       changeResult(true);
       changeLogin('');
       changeName('');
       changeEmail('');
       changeAge('');
       changeResult(false);
-      getData();});
+      });
+      getData(); 
       e.preventDefault();
   }
 
   const handleList=()=>{
     if (showList) {show(false)}
-    else show(true)
+    else {
+      getData();
+      show(true)}
   }
 
   const handleDelete=(id)=>{
@@ -80,12 +83,11 @@ const App = () => {
         );
       });
       getList(userInfoComponent);
-      getCopy(res);
     });
   }
 
-  useEffect(() => {
-    getData();
+  useEffect(() => {    
+
   }, [UsersList]);
 
   return (
